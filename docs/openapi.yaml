@@ -1,0 +1,16 @@
+openapi: 3.0.3
+info:
+  title: Task API
+  version: 1.0.0
+  description: API for managing tasks
+paths:
+  /tasks/{id}:
+    $ref: "./paths/tasks-id.yaml"
+components:
+  schemas:
+    Task:
+      $ref: "./components/schemas/Task.yaml"
+    ValidationError:
+      $ref: "./components/schemas/ValidationError.yaml"
+    NotFoundError:
+      $ref: "./components/schemas/NotFoundError.yaml"

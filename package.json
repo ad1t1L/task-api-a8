@@ -1,0 +1,20 @@
+{
+  "name": "task-api-a8",
+  "version": "1.0.0",
+  "description": "Assignment 8 Task API",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "bundle": "npx @redocly/cli bundle docs/openapi.yaml -o public/bundled.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0",
+    "@redocly/cli": "^1.28.2"
+  }
+}
